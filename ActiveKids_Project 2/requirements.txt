@@ -1,0 +1,6 @@
+flask
+pymongo
+redis
+cassandra-driver
+neo4j
+python-dotenv

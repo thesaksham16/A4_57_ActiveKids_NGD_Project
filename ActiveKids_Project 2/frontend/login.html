@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ActiveKids — Login</title><link rel="stylesheet" href="login.css"></head><body>
+<div class="card" role="main">
+<img class="logo" src="Vibrant ActiveKids Logo with Children in Motion.png" alt="ActiveKids logo">
+<h1>ActiveKids</h1><p class="lead">Gamified fitness for kids — upload exercise videos, earn points, claim rewards!</p>
+<input id="loginUsername" placeholder="Username" autocomplete="username">
+<input id="loginPassword" placeholder="Password" type="password" autocomplete="current-password">
+<select id="loginRole"><option value="user">I'm a Student / User</option><option value="admin">I'm an Admin</option></select>
+<button class="primary" id="signInBtn">Sign In</button>
+<div style="margin-top:12px">or</div>
+<div style="display:flex;gap:8px;margin-top:12px">
+<input id="regUsername" placeholder="Choose username" style="flex:1">
+<input id="regPassword" placeholder="Choose password" style="flex:1" type="password"></div>
+<select id="regRole" style="margin-top:8px"><option value="user">Register as Student</option><option value="admin">Register as Admin</option></select>
+<button class="ghost" id="registerBtn">Register</button>
+<small class="note">Note: Frontend demo is capable of calling a Flask backend if configured. See README.</small>
+<footer>ActiveKids • Demo</footer></div>
+<script src="login.js"></script></body></html>

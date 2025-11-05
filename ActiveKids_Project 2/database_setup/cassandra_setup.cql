@@ -1,0 +1,1 @@
+-- cqlsh script to create keyspace and tables

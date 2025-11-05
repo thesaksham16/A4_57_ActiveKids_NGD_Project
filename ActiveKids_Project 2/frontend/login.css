@@ -1,0 +1,14 @@
+:root{--primary:#ff6f61;--accent:#2979ff;--bg:#f1f8ff;--card:#ffffff;--muted:#667085;}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(135deg,#e6f0ff,#f7fff1);display:flex;align-items:center;justify-content:center;height:100vh;color:#0f172a}
+.card{width:380px;background:var(--card);border-radius:16px;padding:28px 24px;box-shadow:0 12px 30px rgba(16,24,40,0.08);text-align:center}
+img.logo{width:140px;height:auto;margin:0 auto 12px;display:block}
+h1{margin:6px 0 2px;font-size:20px}
+p.lead{margin:0 0 18px;color:var(--muted);font-size:13px}
+input,select{width:100%;padding:10px 12px;margin:8px 0;border-radius:10px;border:1px solid #e6eef8;font-size:14px;box-sizing:border-box}
+button{transition: opacity 0.2s, transform 0.2s;}
+button.primary{width:100%;background:var(--primary);color:white;border:none;padding:10px;border-radius:10px;font-weight:600;cursor:pointer;margin-top:10px;box-shadow:0 8px 20px rgba(255,111,97,0.12)}
+button.ghost{background:transparent;border:1px solid #e6eef8;color:var(--muted);padding:8px;border-radius:10px;cursor:pointer;margin-top:10px;width:100%}
+button:hover { opacity: 0.85; }
+button:active { transform: scale(0.98); }
+footer{margin-top:12px;font-size:12px;color:var(--muted)}
+small.note{display:block;margin-top:10px;color:#9aa4b2;font-size:12px}

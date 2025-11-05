@@ -1,0 +1,62 @@
+
+  :root{--accent:#2979ff;--good:#16a34a;--card:#ffffff;--muted:#6b7280}
+  *{box-sizing:border-box}
+  body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#f3f8ff,#f9fff6);color:#0f172a}
+  header{display:flex;align-items:center;gap:16px;padding:12px 20px;background:#ffffff;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+  header img.logo{height:56px}
+  header h1{font-size:20px;margin:0}
+  .top-right{margin-left:auto;display:flex;gap:12px;align-items:center}
+  .badge{background:#ffecb5;color:#b45309;padding:6px 10px;border-radius:999px;font-weight:600}
+  nav{display:flex;gap:10px;padding:12px 20px;flex-wrap:wrap;}
+  nav button{background:transparent;border:1px solid transparent;padding:8px 12px;border-radius:10px;cursor:pointer; transition: background-color 0.2s;}
+  nav button.active{background:var(--accent);color:white}
+  nav button:hover:not(.active){ background-color: #eef3ff; }
+  .container{max-width:1100px;margin:20px auto;padding:12px}
+  .grid{display:grid;grid-template-columns:1fr 360px;gap:16px}
+  .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 24px rgba(16,24,40,0.04)}
+  .challenge-list{display:grid;gap:12px}
+  .challenge{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;border:1px solid #eef3ff}
+  .challenge.locked { background-color: #f8f9fa; color: #adb5bd; border-color: #dee2e6; }
+  .small{font-size:13px;color:var(--muted)}
+  .section-title{font-weight:700;margin-bottom:8px}
+  .history-list{display:grid;gap:8px}
+  .history-item{display:flex;align-items:center;padding:8px;border-radius:8px;border:1px solid #f1f5f9}
+  .history-item img { width: 48px; height: 48px; object-fit: cover; border-radius: 8px; margin-right: 12px; }
+  
+  #rewardsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .reward-card {
+    border: 1px solid #eef3ff;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .reward-card img {
+    width: 100%;
+    height: 150px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  .reward-card .name { font-weight: 700; margin-bottom: 4px; }
+  #rewardsList > .reward-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 8px);
+    margin: 0 auto;
+  }
+
+  .btn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;border:none;cursor:pointer; transition: opacity 0.2s, transform 0.2s;}
+  .btn:hover { opacity: 0.85; }
+  .btn:active { transform: scale(0.98); }
+  .btn:disabled { background: #9ca3af; cursor: not-allowed; opacity: 0.7; }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr; }
+    nav { justify-content: center; }
+  }
